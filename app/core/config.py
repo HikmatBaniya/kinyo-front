@@ -18,9 +18,6 @@ class Settings(BaseSettings):
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 60 * 24 * 7  # 7 days
 
-    # CORS
-    allowed_origins: list[str] = ["http://localhost:3000"]
-
     # Stripe
     stripe_secret_key: str = ""
     stripe_webhook_secret: str = ""
